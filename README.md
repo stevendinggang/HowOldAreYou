@@ -24,8 +24,15 @@ SnapKit : 布局UI 还是使用它比较舒适
 ### UnitTest
 
 简单的UnitTest,用于保证数据不会异常
+```
+ //MARK - 单元测试
+    func vulueTest() {
+         let vc = ViewController.init()
+         vc.rulerSelectValue(value: 10.0, tag: 0)
 
-
+        XCTAssert(vc.year != "10","结果出错")
+    }
+```
 
 
 
